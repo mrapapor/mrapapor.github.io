@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Martin Rapaport — Mathematics</title>
+  <meta name="description" content="Academic homepage of Martin Rapaport (CMU).">
+  <style>
+    :root{ --bg:#0b0c10; --panel:#0f1117; --card:#11131a; --muted:#9aa0af; --text:#e8e9ee; --brand:#7c9cff; --accent:#7fffd4; --radius:18px; }
+    @media (prefers-color-scheme: light){ :root{ --bg:#f6f7fb; --panel:#ffffff; --card:#ffffff; --muted:#5e6676; --text:#14151a; --brand:#4b66ff; --accent:#00b894; } }
+    body{ margin:0; background: var(--bg); color:var(--text); font: 16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; }
+    a{ color: var(--brand); text-decoration: none; } a:hover{ text-decoration: underline; }
+    .container{ width:min(1100px, 92vw); margin-inline:auto; }
+    header{ position: sticky; top:0; backdrop-filter: blur(8px); border-bottom:1px solid rgba(255,255,255,.08); }
+    .nav{ display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.8rem 0; }
+    .navlinks{ display:flex; gap:.8rem; align-items:center; flex-wrap:wrap; }
+    .navlinks a{ padding:.5rem .7rem; border-radius:10px; } .navlinks a:hover{ background: rgba(255,255,255,.06); text-decoration:none; }
+    section{ padding: 24px 0 32px; }
+    .hero{ padding: 54px 0 28px; } .hero-grid{ display:grid; grid-template-columns: 1.2fr .8fr; gap:2rem; align-items:center; }
+    .card{ background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding: 1.1rem; }
+    .photo{ width:100%; aspect-ratio:1; object-fit:cover; border-radius: 14px; box-shadow: 0 18px 40px rgba(0,0,0,.35); }
+    .tilt-left{ transform: rotate(-2deg); } .tilt-right{ transform: rotate(2deg); }
+    .kicker{ text-transform:uppercase; letter-spacing:.18em; font-size:.8rem; color:var(--muted); }
+    h1{ font-size: clamp(2rem, 4vw, 3rem); margin:.2rem 0 .6rem; line-height:1.1; }
+    .meta{ color:var(--muted); margin:.3rem 0 1rem; }
+    .actions{ display:flex; gap:.7rem; flex-wrap:wrap; }
+    .btn{ display:inline-flex; align-items:center; gap:.5rem; padding:.7rem 1rem; border-radius:12px; border:1px solid rgba(255,255,255,.18); background:rgba(255,255,255,.04); color:var(--text); font-weight:600; }
+    .grid-2{ display:grid; grid-template-columns: repeat(2, 1fr); gap:1rem; } @media (max-width: 900px){ .hero-grid, .grid-2{ grid-template-columns: 1fr; } }
+    footer{ padding: 28px 0 50px; color:var(--muted); border-top:1px solid rgba(255,255,255,.08); }
+    .pub{ padding:.6rem .8rem; border-left:4px solid var(--brand); border-radius: 12px; background: rgba(255,255,255,.03); }
+.site-title {
+  font-size: 1.2rem;       /* un poco más grande que antes */
+  font-weight: 500;        /* sigue sobrio, sin negrita excesiva */
+  letter-spacing: .15em;   /* mismo espaciado */
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+
+  </style>
+
+
+</head>
+<body>
+<header>
+  <div class="container nav">
+<h1 class="site-title">Martin Rapaport</h1>
+
+ <nav class="navlinks">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+<a href="#cv">CV</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <p class="meta">
+        Postdoctoral Researcher, <strong>Carnegie Mellon University</strong> (hosted by <strong>Prasad Tetali</strong>).<br>
+        Ph.D., <strong>Université Gustave Eiffel (Paris-Est)</strong> with <strong>Paul-Marie Samson</strong> & <strong>Matthieu Fradelizi</strong>.<br>
+        Master 2 in Mathematics and Applications, <strong>Université Paris Dauphine – PSL</strong>.<br>
+        B.Sc. in Mathematical Engineering, <strong>Universidad de Chile</strong>.
+      </p>
+    </div>
+    <div class="card">
+      <img class="photo tilt-left" src="martin-hero.jpg" alt="Portrait of Martin Rapaport">
+    </div>
+  </div>
+</section>
+
+
+<section id="research">
+  <div class="container">
+    <p class="kicker">Research interests</p>
+    <h2>Convexity · Optimal Transport · Discrete Analysis</h2>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="container">
+    <p class="kicker">Publications & Preprints</p>
+
+    <div class="pub">
+      <p>
+        <strong>Entropic versions of Bergström’s and Bonnesen’s inequalities</strong><br>
+        (with Matthieu Fradelizi and Lampros Gavalakis).<br>
+        <em>arXiv preprint</em>
+        <a href="https://arxiv.org/abs/2501.10309" target="_blank">arXiv:2501.10309 [cs.IT, math.FA]</a>, submitted (2025).<br>
+        A conference version appeared as
+        <em>A Dimensional Improvement of the Entropy Power Inequality under Marginal Assumptions</em>,
+        in the <em>Proceedings of the 2025 IEEE International Symposium on Information Theory (ISIT)</em>, Ann Arbor, MI, USA, 2025, pp. 1–6.<br>
+        [<a href="https://arxiv.org/pdf/2501.10309.pdf" target="_blank">arXiv PDF</a>]
+        [<a href="https://www.dpmms.cam.ac.uk/~lg560/dimensionalimprove.pdf" target="_blank">ISIT PDF</a>]
+      </p>
+    </div>
+    <br>
+
+    <div class="pub">
+      <p>
+        <strong>On the monotonicity of discrete entropy for log-concave random vectors on ℤ<sup>d</sup></strong><br>
+        (with Matthieu Fradelizi and Lampros Gavalakis).<br>
+        <em>arXiv preprint</em>
+        <a href="https://arxiv.org/abs/2401.15462" target="_blank">arXiv:2401.15462 [math.PR, cs.IT]</a>, under revision (2024).<br>
+        A conference version appeared as
+        <em>Dimensional discrete entropy power inequalities for log-concave random vectors</em>,
+        in the <em>Proceedings of the 2024 IEEE International Symposium on Information Theory (ISIT)</em>, Athens, Greece, pp. 3582–3587, IEEE, 2024.<br>
+        [<a href="https://arxiv.org/pdf/2401.15462.pdf" target="_blank">arXiv PDF</a>]
+        [<a href="https://www.dpmms.cam.ac.uk/~lg560/EPIdISIT.pdf" target="_blank">ISIT PDF</a>]
+      </p>
+    </div>
+    <br>
+
+    <div class="pub">
+      <p>
+        <strong>Criteria for entropic curvature on graph spaces</strong><br>
+        (with Paul-Marie Samson).<br>
+        <em>arXiv preprint</em>
+        <a href="https://arxiv.org/abs/2303.15874" target="_blank">arXiv:2303.15874 [math.PR, math.FA, math.MG]</a>,
+        under revision (2024).<br>
+        [<a href="https://arxiv.org/pdf/2303.15874.pdf" target="_blank">PDF</a>]
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="teaching">
+  <div class="container">
+    <p class="kicker">Teaching</p>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Carnegie Mellon University (2024–present)</h3>
+        <ul>
+          <li><strong>Instructor</strong>: <em>Probability (21-325)</em></li>
+          <li><strong>Instructor</strong>: <em>Linear Algebra (21-341)</em></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Université Gustave Eiffel (2020–2024)</h3>
+        <p><em>Teaching Assistant (Chargé de TD)</em></p>
+        <p><strong>Semester 1 (2020–2021)</strong></p>
+        <ul>
+          <li>Sequences and Series (L2)</li>
+          <li>Statistics (L1)</li>
+        </ul>
+        <p><strong>Semester 2 (2020–2021)</strong></p>
+        <ul>
+          <li>Statistics (L1)</li>
+        </ul>
+        <p><strong>Semester 1 (2021–2022)</strong></p>
+        <ul>
+          <li>Methodology (L1)</li>
+          <li>Sequences and Series (L2)</li>
+          <li>Statistics (L1)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="cv">
+  <div class="container">
+    <p class="kicker">Curriculum Vitae</p>
+    <h2>Academic Background and Appointments</h2>
+    <p>A complete version of my CV can be found here:
+      <a href="cv.pdf" target="_blank">Download CV (PDF)</a>.
+    </p>
+
+    <h3>Academic Appointments</h3>
+    <ul>
+      <li><strong>Sep 2024 – present:</strong> Postdoctoral Associate, <em>Carnegie Mellon University</em>.</li>
+      <li><strong>Sep 2020 – Sep 2024:</strong> Doctoral Researcher, <em>Université Gustave Eiffel (Paris-Est)</em>.</li>
+    </ul>
+
+    <h3>Scholarships and Awards</h3>
+    <ul>
+      <li><strong>2020:</strong> PSL Excellence Scholarship, <em>Université Paris Dauphine – PSL</em>.</li>
+      <li><strong>2018:</strong> Highest Distinction, <em>Master in Mathematical Engineering, Universidad de Chile</em>.</li>
+    </ul>
+
+    <h3>Education</h3>
+    <ul>
+      <li><strong>Ph.D. in Mathematics</strong>, <em>Université Gustave Eiffel (Paris-Est)</em>, 2020–2024.<br>
+        Advisors: <em>Paul-Marie Samson</em> and <em>Matthieu Fradelizi</em>.
+      </li>
+      <li><strong>Master 2 in Mathematics and Applications</strong>, <em>Université Paris Dauphine – PSL</em>, 2019–2020.</li>
+      <li><strong>B.Sc. in Mathematical Engineering</strong>, <em>Universidad de Chile</em>, 2015–2018.</li>
+    </ul>
+
+    <h3>Languages</h3>
+    <ul>
+      <li><strong>Spanish:</strong> Native</li>
+      <li><strong>French:</strong> Full professional proficiency</li>
+      <li><strong>English:</strong> Full professional proficiency</li>
+      <li><strong>Italian:</strong> Basic knowledge (currently improving)</li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+<section id="contact">
+  <div class="container grid-2">
+    <div>
+      <p class="kicker">Contact</p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:mrapapor@andrew.cmu.edu">mrapapor@andrew.cmu.edu</a><br>
+        <strong>Office:</strong> Wean Hall 8124<br>
+        <strong>Affiliation:</strong> Department of Mathematical Sciences, Carnegie Mellon University
+      </p>
+    </div>
+    <div class="card">
+      <img class="photo tilt-right" src="martin-footer.jpg" alt="Portrait of Martin Rapaport">
+    </div>
+  </div>
+</section>
+
+
+<footer><div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap;"><small>© 2025 Martin Rapaport — Last updated 2025-11-04.</small><div><a href="#top">Back to top ↑</a></div></div></footer>
+</body></html>
