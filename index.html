@@ -20,7 +20,16 @@
     .card{ background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding: 1.1rem; }
     .photo{ width:100%; aspect-ratio:1; object-fit:cover; border-radius: 14px; box-shadow: 0 18px 40px rgba(0,0,0,.35); }
     .tilt-left{ transform: rotate(-2deg); } .tilt-right{ transform: rotate(2deg); }
-    .kicker{ text-transform:uppercase; letter-spacing:.18em; font-size:.8rem; color:var(--muted); }
+.kicker{
+  text-transform: uppercase;
+  letter-spacing: .20em;     /* un poco más espacioso = más elegante */
+  font-size: 1.05rem;        /* tamaño grande pero no agresivo */
+  font-weight: 300;          /* más fino = más bonito */
+  color: var(--muted);
+  margin-bottom: .6rem;
+}
+
+
     h1{ font-size: clamp(2rem, 4vw, 3rem); margin:.2rem 0 .6rem; line-height:1.1; }
     .meta{ color:var(--muted); margin:.3rem 0 1rem; }
     .actions{ display:flex; gap:.7rem; flex-wrap:wrap; }
@@ -29,13 +38,14 @@
     footer{ padding: 28px 0 50px; color:var(--muted); border-top:1px solid rgba(255,255,255,.08); }
     .pub{ padding:.6rem .8rem; border-left:4px solid var(--brand); border-radius: 12px; background: rgba(255,255,255,.03); }
 .site-title {
-  font-size: 1.2rem;       /* un poco más grande que antes */
-  font-weight: 500;        /* sigue sobrio, sin negrita excesiva */
-  letter-spacing: .15em;   /* mismo espaciado */
+  font-size: 1.6rem;         /* más grande pero no bruto */
+  font-weight: 300;          /* super fino */
   text-transform: uppercase;
-  color: var(--muted);
+  letter-spacing: .18em;     /* igual que Publications */
+  color: var(--muted);       /* ese gris metálico elegante */
   margin: 0;
 }
+
 
   </style>
 
@@ -63,7 +73,8 @@
         Postdoctoral Researcher, <strong>Carnegie Mellon University</strong> (hosted by <strong>Prasad Tetali</strong>).<br>
         Ph.D., <strong>Université Gustave Eiffel (Paris-Est)</strong> with <strong>Paul-Marie Samson</strong> & <strong>Matthieu Fradelizi</strong>.<br>
         Master 2 in Mathematics and Applications, <strong>Université Paris Dauphine – PSL</strong>.<br>
-        B.Sc. in Mathematical Engineering, <strong>Universidad de Chile</strong>.
+        B.Sc. in Mathematical Engineering, <strong>Universidad de Chile</strong>. Undergraduate thesis supervised by <strong>Roberto Cominetti</strong>.
+
       </p>
     </div>
     <div class="card">
@@ -73,16 +84,21 @@
 </section>
 
 
-<section id="research">
-  <div class="container">
-    <p class="kicker">Research interests</p>
-    <h2>Convexity · Optimal Transport · Discrete Analysis</h2>
-  </div>
-</section>
-
 <section id="publications">
   <div class="container">
     <p class="kicker">Publications & Preprints</p>
+
+<br>
+<div class="pub">
+  <p>
+    <strong>Negative Moments of Steinhaus Sums</strong><br>
+    (with Tomasz Tkocz and Isabella Wu).<br>
+    <em>arXiv preprint</em>
+    <a href="https://arxiv.org/abs/2512.09077" target="_blank">arXiv:2512.09077 [math.PR, math.FA]</a> (2025).<br>
+    [<a href="https://arxiv.org/pdf/2512.09077.pdf" target="_blank">arXiv PDF</a>]
+  </p>
+</div>
+
 
     <div class="pub">
       <p>
@@ -134,25 +150,30 @@
   <div class="container">
     <p class="kicker">Teaching</p>
     <div class="grid-2">
+
       <div class="card">
         <h3>Carnegie Mellon University (2024–present)</h3>
         <ul>
-          <li><strong>Instructor</strong>: <em>Probability (21-325)</em></li>
-          <li><strong>Instructor</strong>: <em>Linear Algebra (21-341)</em></li>
+          <li><strong>Instructor</strong>: Probability (21-325)</li>
+          <li><strong>Instructor</strong>: Linear Algebra (21-341)</li>
         </ul>
       </div>
+
       <div class="card">
         <h3>Université Gustave Eiffel (2020–2024)</h3>
-        <p><em>Teaching Assistant (Chargé de TD)</em></p>
+        <p><strong>Teaching Assistant (Chargé de TD)</strong></p>
+
         <p><strong>Semester 1 (2020–2021)</strong></p>
         <ul>
           <li>Sequences and Series (L2)</li>
           <li>Statistics (L1)</li>
         </ul>
+
         <p><strong>Semester 2 (2020–2021)</strong></p>
         <ul>
           <li>Statistics (L1)</li>
         </ul>
+
         <p><strong>Semester 1 (2021–2022)</strong></p>
         <ul>
           <li>Methodology (L1)</li>
@@ -160,6 +181,7 @@
           <li>Statistics (L1)</li>
         </ul>
       </div>
+
     </div>
   </div>
 </section>
