@@ -38,14 +38,15 @@
     .grid-2{ display:grid; grid-template-columns: repeat(2, 1fr); gap:1rem; } @media (max-width: 900px){ .hero-grid, .grid-2{ grid-template-columns: 1fr; } }
     footer{ padding: 28px 0 50px; color:var(--muted); border-top:1px solid rgba(255,255,255,.08); }
     .pub{ padding:.6rem .8rem; border-left:4px solid var(--brand); border-radius: 12px; background: rgba(255,255,255,.03); }
-.site-title {
-  font-size: 1.6rem;         /* más grande pero no bruto */
-  font-weight: 300;          /* super fino */
-  text-transform: uppercase;
-  letter-spacing: .18em;     /* igual que Publications */
-  color: var(--muted);       /* ese gris metálico elegante */
+.site-title{
+  font-size: clamp(2.4rem, 4.2vw, 3.4rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  color: var(--text);
   margin: 0;
+  line-height: 1.05;
 }
+
 
 
   </style>
