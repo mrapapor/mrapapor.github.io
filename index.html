@@ -39,10 +39,11 @@
     footer{ padding: 28px 0 50px; color:var(--muted); border-top:1px solid rgba(255,255,255,.08); }
     .pub{ padding:.6rem .8rem; border-left:4px solid var(--brand); border-radius: 12px; background: rgba(255,255,255,.03); }
 .site-title{
-  font-size: clamp(3.6rem, 6vw, 4.6rem);
-  font-weight: 300 !important;   /* ← ESTA es la clave */
-  letter-spacing: 0.02em;
-  color: var(--text);
+  font-size: clamp(3.6rem, 6vw, 4.6rem);  /* tamaño grande (se queda) */
+  font-weight: 300;                      /* igual que kicker */
+  text-transform: uppercase;             /* igual que kicker */
+  letter-spacing: .20em;                 /* igual que kicker */
+  color: var(--muted);                   /* mismo gris elegante */
   margin: 0;
   line-height: 1.05;
 }
