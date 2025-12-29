@@ -32,6 +32,14 @@
 
     h1{ font-size: clamp(2rem, 4vw, 3rem); margin:.2rem 0 .6rem; line-height:1.1; }
     .meta{ color:var(--muted); margin:.3rem 0 1rem; }
+    .meta span{
+  display: block;
+  margin-bottom: .6rem;
+}
+.meta span:last-child{
+  margin-bottom: 0;
+}
+
     .actions{ display:flex; gap:.7rem; flex-wrap:wrap; }
     .btn{ display:inline-flex; align-items:center; gap:.5rem; padding:.7rem 1rem; border-radius:12px; border:1px solid rgba(255,255,255,.18); background:rgba(255,255,255,.04); color:var(--text); font-weight:600; }
     .grid-2{ display:grid; grid-template-columns: repeat(2, 1fr); gap:1rem; } @media (max-width: 900px){ .hero-grid, .grid-2{ grid-template-columns: 1fr; } }
